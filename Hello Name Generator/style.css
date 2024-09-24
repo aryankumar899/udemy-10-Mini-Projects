@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+     height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+.container{
+    text-align: center;
+}
+span{
+    color: red;
+}
+button{
+    background-color: hotpink;
+    color: honeydew;
+    padding: 0.5rem 1rem;
+    border: 2px solid honeydew;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+button:hover{
+    background-color: #949494;
+    box-shadow: 0 0 12px 8px honeydew;
+}

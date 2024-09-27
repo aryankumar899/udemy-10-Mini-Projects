@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Password Generator</title>
+    <title>Email Checker</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <div class="container">
-        <div class="container-random-password">
-            <h1>Generate a <br> <span>Random Password</span></h1>
-            <div class="display">
-                   <input type="text" id="password" placeholder="Password">
-                   <i class="fas fa-clipboard" id="copy"></i>
-            </div>
-            <button id="btn">Generate Password</button>
-        </div>
+     <div class="container">
+           <label for="email-id">Email ID</label>
+           <input type="email" id="email-id" oninput="checker()">
+           <div class="icon"></div>
+           <p id="error-msg">Please Enter A valid Email</p>
+     </div>
 
-    </div>
     <script src="script.js"></script>
 </body>
-
 </html>

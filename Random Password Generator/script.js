@@ -17,3 +17,17 @@ const generatePassword=()=>{
 
 
 button.addEventListener("click",generatePassword);
+
+copy.addEventListener("click",()=>{
+    const passwordCopy=passwordBox.value.trim();
+
+    if(!passwordCopy){
+        alert("No Password to copy!Please Generate a Password First.");
+    }
+    
+        navigator.clipboard.writeText(passwordCopy)
+        .then(()=>{
+            alert("Passord Copied Successfully");
+        })
+    
+})

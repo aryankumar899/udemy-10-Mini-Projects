@@ -1,9 +1,46 @@
 *{
     margin: 0;
     padding: 0;
-    display: inline-block;
+    /* display: inline-block; */
+    font-family: sans-serif
 }
 .container{
-    display:  flex;
+    /* display:  flex;
     justify-content: center;
+    align-items: center; */
+    position: absolute;
+    top: 30%;
+    left: 30%;
+
+}
+.container h1{
+    align-items: center;
+    margin-left: 140px;
+}
+#number{
+    width: 100vh;
+    height: 30px;
+    margin-top: 20px;
+    /* margin-left: 50px; */
+
+}
+#btn{
+    margin-top: 20px;
+    margin-left: 45%;
+    width: 80px;
+    height: 40px;
+  background-color: rgb(4, 76, 144);
+  border: 2px solid rgb(4, 76, 144);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#write{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+
+}
+#number{
+    font-size: 18px;
 }

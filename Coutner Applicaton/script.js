@@ -1,20 +1,20 @@
-let count=0;
-const value=document.querySelector("#value");
-const btns=document.querySelectorAll(".btn");
+let count = 0;
+const value = document.querySelector("#value");
+const btns = document.querySelectorAll(".btn");
 
-btns.forEach(btn=>{
-    btn.addEventListener("click",e=>{
-        let eleId=e.currentTarget.id;
-        if(eleId=='decrease'){
+btns.forEach(btn => {
+    btn.addEventListener("click", e => {
+        let eleId = e.currentTarget.id;
+        if (eleId == 'decrease') {
             count--;
-        }else if(eleId=='reset'){
-         count=0;
+        } else if (eleId == 'reset') {
+            count = 0;
         }
-        else{
+        else {
             count++;
         }
-        value.textContent=count;
-        value.style.color=count> 0 ? "green" : count<0? "red" : "#007bff";
+        value.textContent = count;
+        value.style.color = count > 0 ? "green" : count < 0 ? "red" : "#007bff";
     });
 
 

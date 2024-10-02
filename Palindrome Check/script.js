@@ -1,4 +1,4 @@
-const { parentPort } = require("worker_threads");
+
 
 let input = document.getElementById("word");
 let btn = document.getElementById("btn-check");
